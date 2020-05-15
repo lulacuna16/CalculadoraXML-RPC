@@ -37,6 +37,6 @@ def verMenu(Cliente):
         else:
             print()
             seguir= False
-
+#The verbose option gives you debugging information useful for working out where communication errors might be happening.
 with xmlrpc.client.ServerProxy('http://192.168.1.64:56432',verbose=True) as Cliente:
     verMenu(Cliente)
